@@ -25,15 +25,10 @@ I'm a **passionate Full Stack Developer** with over **2 years of experience** bu
   <img src="https://img.shields.io/badge/scss-hotpink.svg?style=for-the-badge&logo=sass&logoColor=white" alt="SCSS" /> 
   <img src="https://img.shields.io/badge/next-black?style=for-the-badge&logo=next.js&logoColor=white" alt="Next JS" /> 
   <img src="https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white" alt="Redux" /> 
-  <img src="https://img.shields.io/badge/vite-%23384137.svg?style=for-the-badge&logo=vite&logoColor=ffd62e" alt="Vite" /> 
-  <img src="https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black" alt="Webpack" /> 
   <img src="https://img.shields.io/badge/babel-%23F9DC3e?style=for-the-badge&logo=babel&logoColor=black" alt="Babel" /> 
-  <img src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB" alt="Express.js" /> 
-  <img src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" /> 
   <img src="https://img.shields.io/badge/graphql-%23E10098?style=for-the-badge&logo=graphql&logoColor=white" alt="GraphQL" /> 
   <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" alt="Git" /> 
   <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /> 
-  <img src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" /> 
   <img src="https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=azure-devops&logoColor=white" alt="Azure" /> 
   <img src="https://img.shields.io/badge/jest-%23C21325.svg?style=for-the-badge&logo=jest&logoColor=white" alt="Jest" /> 
   <img src="https://img.shields.io/badge/npm-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white" alt="npm" /> 
@@ -41,7 +36,7 @@ I'm a **passionate Full Stack Developer** with over **2 years of experience** bu
 </p>
 
 ### **✨ Fun Facts About Me**  
-- 🧩 Competitive coder, solving problems with **C++** on the side.  
+- 🧩 Competitive coder, solving problems with **Python** on the side.  
 - 🍃 Believer in work-life balance, with a love for yoga and the occasional tech meet-up.  
 - 💬 Always up for tech talk or brainstorming sessions!
 
