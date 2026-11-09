@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pratik Bagad — Full Stack Developer</title>
+  <meta name="description" content="Pratik Bagad is a Full Stack Developer building scalable web applications with React, Next.js and Node.js." />
+  <meta property="og:title" content="Pratik Bagad — Full Stack Developer" />
+  <meta property="og:description" content="Building fast, scalable web applications with React, Next.js and Node.js." />
+  <meta property="og:image" content="assets/portrait.jpg" />
+  <meta name="theme-color" content="#0a0a0f" />
+  <link rel="icon" href="assets/avatar.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a href="#home" class="brand" aria-label="Home">
+      <img src="assets/avatar.png" alt="" />
+      <span>pratik<b>.</b></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#journey">Journey</a>
+      <a href="#recognition">Recognition</a>
+      <a href="#work" data-requires="projects">Work</a>
+      <a href="#contact" class="nav-cta">Let's talk</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <canvas id="field" aria-hidden="true"></canvas>
+      <div class="hero-inner container">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="dot"></span> Available for exciting opportunities</p>
+          <h1 class="hero-title">
+            <span class="line">Hi, I'm</span>
+            <span class="line name" data-name></span>
+          </h1>
+          <p class="role"><span class="mono">&gt;</span> <span id="typed"></span><span class="caret">_</span></p>
+          <p class="lead" data-tagline></p>
+          <div class="cta-row">
+            <a class="btn btn-primary magnetic" data-email-link>Email me <span>→</span></a>
+            <a class="btn btn-ghost magnetic" data-resume hidden download>Download résumé</a>
+            <a class="btn btn-ghost magnetic" data-linkedin target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+          <ul class="stats" id="stats"></ul>
+        </div>
+
+        <div class="hero-visual">
+          <div class="portrait-card tilt">
+            <div class="portrait-ring" aria-hidden="true"></div>
+            <img src="assets/portrait.jpg" alt="Portrait of Pratik Bagad" />
+            <div class="badge badge-status"><span class="pulse"></span> Active now</div>
+            <div class="badge badge-chip chip-1">⚛ React</div>
+            <div class="badge badge-chip chip-2">⬢ Node.js</div>
+            <div class="badge badge-award">🏆 Excellence Award '25</div>
+          </div>
+          <p class="hint mono">move · click the background</p>
+        </div>
+      </div>
+      <a href="#about" class="scroll-cue" aria-label="Scroll to about"><span></span></a>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee"></div></div>
+
+    <!-- ABOUT -->
+    <section class="section container" id="about">
+      <header class="section-head reveal">
+        <p class="kicker mono">01 — About</p>
+        <h2 data-about-heading></h2>
+      </header>
+      <div class="about-grid">
+        <figure class="about-photo reveal">
+          <img src="assets/lake.jpg" alt="Pratik standing by a lakeside" loading="lazy" />
+          <figcaption class="mono">// off-screen, recharging</figcaption>
+        </figure>
+        <div class="about-copy reveal" id="aboutCopy"></div>
+      </div>
+      <div class="pillars" id="pillars"></div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section container" id="skills">
+      <header class="section-head reveal">
+        <p class="kicker mono">02 — Capabilities</p>
+        <h2>Technical foundations.</h2>
+      </header>
+      <div class="skills-grid" id="skillsGrid"></div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section class="section container" id="journey">
+      <header class="section-head reveal">
+        <p class="kicker mono">03 — Journey</p>
+        <h2>Where I've been building.</h2>
+      </header>
+      <ol class="timeline" id="timeline"></ol>
+    </section>
+
+    <!-- RECOGNITION -->
+    <section class="section container" id="recognition">
+      <header class="section-head reveal">
+        <p class="kicker mono">04 — Recognition</p>
+        <h2>Trusted when it matters.</h2>
+      </header>
+      <article class="award reveal" id="award">
+        <div class="award-shine" aria-hidden="true"></div>
+        <div class="award-side">
+          <img src="assets/trophy.png" alt="" class="trophy" />
+          <h3 data-award-title></h3>
+          <p class="mono award-meta" data-award-meta></p>
+        </div>
+        <blockquote class="award-quote">
+          <span class="quote-mark" aria-hidden="true">“</span>
+          <p data-award-quote></p>
+          <footer class="mono">— Nomination, <span data-award-issuer></span></footer>
+        </blockquote>
+      </article>
+    </section>
+
+    <!-- WORK (shown only when projects exist in data.js) -->
+    <section class="section container" id="work" hidden>
+      <header class="section-head reveal">
+        <p class="kicker mono">05 — Work</p>
+        <h2>Selected builds.</h2>
+      </header>
+      <div class="projects" id="projects"></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section container" id="contact">
+      <div class="contact reveal">
+        <div class="contact-copy">
+          <p class="kicker mono">Get in touch</p>
+          <h2>Let's build something <em>together.</em></h2>
+          <p class="muted">Have a role, a project or just want to talk tech? My inbox is always open — I usually reply within a day.</p>
+          <ul class="contact-list">
+            <li><span class="mono">email</span><a data-email-link data-email-text></a></li>
+            <li><span class="mono">linkedin</span><a data-linkedin target="_blank" rel="noopener">/in/pratikbagad</a></li>
+            <li><span class="mono">github</span><a data-github target="_blank" rel="noopener">@PSB21</a></li>
+          </ul>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <label>Your name<input name="name" required autocomplete="name" /></label>
+          <label>Your email<input name="email" type="email" required autocomplete="email" /></label>
+          <label>Message<textarea name="message" rows="5" required></textarea></label>
+          <button class="btn btn-primary magnetic" type="submit">Send message <span>→</span></button>
+          <p class="mono form-note">Opens your email app with the message ready to send.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>© <span id="year"></span> Pratik Bagad. Designed &amp; built with care.</p>
+    <a href="#home" class="mono">back to top ↑</a>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
