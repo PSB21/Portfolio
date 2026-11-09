@@ -1,0 +1,9 @@
+{
+  "name": "pratik-bagad-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal portfolio of Pratik Bagad — static site, no build step.",
+  "scripts": {
+    "start": "npx --yes serve -l 3000 ."
+  }
+}
